@@ -1,0 +1,130 @@
+.App {
+ /* text-align: center;*/
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 1.4s linear;
+  width:100%;
+  z-index:-10;
+}
+
+.App-logo2 {
+  animation: App-logo-spin infinite 1.4s linear;
+  width:5rem;
+  z-index:-10;
+  display:inline-block;
+}
+
+h2.total-cal {
+  font-size:1.5rem;
+  font-family:impact;
+  display:inline-block;
+}
+
+h2.h2-title {
+    display:inline-block;
+    font-size:1.5rem;
+      font-family:impact;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.calorie-count {
+    display:inline-block
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.make-border{
+    border-style: solid;
+    border-width: 5px;
+}
+
+h2.make-inline{
+    display:inline;
+}
+
+.list-group{
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 10px;
+}
+
+.wtf-row {
+    max-height:2.5rem;
+}
+
+@media (max-width: 575.98px) { 
+    .list-group{
+        max-height:23rem;
+        overflow-y:scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .list-group-item{
+        min-height:4.5rem;
+    }
+    
+    h2.h2-title {
+        font-size: 1.4rem;
+       // margin-right:;
+       margin-bottom:0.1rem;
+    }
+    
+    .li-content{
+        font-size:1.3rem
+    }
+
+    .App-logo2 {
+      width:4.0rem;
+      margin-right:-1.7rem;
+      margin-left:-0.6rem;
+      animation: App-logo-spin infinite 0.7s linear;
+      margin-bottom:0.4rem;
+    }
+}
+
+@media (max-width: 767.98px) and (min-width:576px) {  
+    .list-group{
+        max-height:20rem;
+    }
+}
+
+@media (max-width: 991.98px) and (min-width:760px) {  
+    .list-group{
+
+        max-height:30rem;
+    }
+}
+
+@media (max-width: 1199.98px) and (min-width:992px) { 
+    .list-group{
+        max-height:35rem;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .list-group{
+        max-height:35rem;
+    }
+}
